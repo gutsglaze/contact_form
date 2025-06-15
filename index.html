@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <div class="card">
+        <div class="type-input">
+            <form class="formulario" action="#" method="POST">
+                <h1 id="titulo">Formulario de Contacto</h1>
+
+                <label for="full-name">Nombre completo</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="user-type">Tipo de usuario</label>
+                <input list="user-type" name="user-type" required>
+                <datalist id="user-type">
+                    <option value="dueño">Dueño de la empresa o negocio</option>
+                    <option value="cliente">Consumidor de la empresa o negocio</option>
+                    <option value="mediador">Mediador de negocios</option>
+                </datalist>
+
+                <label for="reference">Referente</label>
+                <input list="reference" name="reference">
+                <datalist id="reference">
+                    <option value="amigo1">El del barrio</option>
+                    <option value="amigo2">El de la ciudad</option>
+                    <option value="amigo3">El del cole</option>
+                    <option value="amigo4">El de la u</option>
+                    <option value="amigo5">El de mi casa</option>
+                </datalist>
+
+                <label for="message">Mensaje</label>
+                <input type="text" id="message" name="message" required>
+
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Acepto los <a href="#">términos y condiciones</a>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
